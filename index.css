@@ -207,4 +207,25 @@ body {
       text-align: center;
     }
   }
+  .container:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+  }
+   
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
+  .content {
+      animation: fadeIn 2s ease-in;
+  }
+    @keyframes float {
+      0% { transform: translatey(0); }
+      50% { transform: translatey(-10px); }
+      100% { transform: translatey(0); }
+  }
+  .floating {
+      animation: float 3s ease-in-out infinite;
+  }
+  
   
